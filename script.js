@@ -15,7 +15,7 @@ document.getElementById("multiply_button").addEventListener("click", function() 
 });
 
 function decimalToBinaryManual(num) {
-  if (num === 0) return "0";
+  if (num == 0) return "0";
 
   let binary = "";
   while (num > 0) {
