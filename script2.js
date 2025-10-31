@@ -30,5 +30,4 @@ document.getElementById("binary_button").addEventListener("click", function() {
     let decimalValue = parseInt(document.getElementById("changeP").innerHTML);
     let binaryValue = decimalToBinaryManual(decimalValue);
     document.getElementById("binary").innerHTML = binaryValue;
-    
 });
