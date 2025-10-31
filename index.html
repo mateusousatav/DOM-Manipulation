@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Sumit Saha, Learn with Sumit" />
-    <meta name="description" content="We love JavaScript" />
-    <title>DOM - Document Object Model</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section class="container">
-      <div class="logo">
-        <img src="logo.png" alt="Learn with AI" />
-      </div>
-      <h1 id="header" class="header">To-Do App</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h4>Just create a card with button</h4>
+    
+    <div class = "card">
+        <p id="changeP">0</p>
+        <button type="button" id="add_button">Increment +1</button>
+        <button type = "button" id="multiply_button">Multiplication Table</button>
+        <button type = "button" id="binary_button">Convert to Binary</button>
+    </div>
 
-      <form class="new-task-container box">
-        <label for="new-task">Add New Task</label>
-        <input type="text" id="new-task" />
-        <input type="submit" id="addTask" value="Add Task" />
-       
-      </form>
+<!--Use a for loop from 1 to t10 and multiply with the number, then print accordingly to the table-->
+    <div class = "card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Multiplication Table</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <tr>
+                    <td class="mult-factors">1</td>
+                    <td class="multiples">--</td> <!--1 * 5-->
+                </tr>
+                <tr>
+                    <td class="mult-factors">2</td>
+                    <td class="multiples">--</td> <!--2 * 5-->
+                </tr>
+                <tr>
+                    <td class="mult-factors">3</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">4</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">5</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">6</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">7</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">8</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">9</td>
+                    <td class="multiples">--</td>
+                </tr>
+                <tr>
+                    <td class="mult-factors">10</td>
+                    <td class="multiples">--</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-      <div class="todo-list box">
-        <h2>Incomplete Tasks</h2>
-        <ul id="items">
-          <li class="item">
-            <input type="checkbox" />
-            <label id="taskname1">Task Name1</label>
-          </li>
-          <li class="item">
-            <input type="checkbox" /> 
-            <label  id="taskname2">Task Name2 </label>
-          </li>
-          <li class="item">
-            <input type="checkbox" />
-            <label id="taskname3">Task Name</label>
-          </li>
-        </ul>
-      </div>
-      <!--/todo-list-->
-
-      <div class="complete-list box">
-        <h2>Completed Tasks</h2>
-        <ul>
-          <li class="item" >Task Name <button class="delete" id="compl1">Delete</button></li>
-        </ul>
-      </div>
-      <!--/complete-list-->
-    </section>
-    <!--/container-->
-    <script src="script.js"></script>
-  </body>
+    <div class = "card">
+        <div>
+            Convert to Binary:
+            <p id="binary">--</p>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
 </html>
