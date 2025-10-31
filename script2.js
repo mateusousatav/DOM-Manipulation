@@ -17,3 +17,20 @@ document.getElementById("multiply_button").addEventListener("click", function() 
     }
 });
 
+function decimalToBinaryManual(num) {
+    if (num == 0) return "0";
+  
+    let binary = "";
+    while (num > 0) {
+      let remainder = num % 2;
+      binary = remainder + binary;
+      num = Math.floor(num / 2);
+    }
+    return binary;
+  }
+  
+  document.getElementById("binary_button").addEventListener("click", function() {
+      let decimalValue = parseInt(document.getElementById("changeP").innerHTML);
+      let binaryValue = decimalToBinaryManual(decimalValue);
+      document.getElementById("binary").innerHTML = binaryValue;
+  });
